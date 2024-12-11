@@ -9,12 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^2.2.0",
     "@next/third-parties": "^15.0.3",
     "@radix-ui/react-tooltip": "^1.0.7",
     "@vercel/analytics": "^1.4.1",
     "clsx": "^2.0.0",
+    "date-fns": "^4.1.0",
     "framer-motion": "^10.16.4",
+    "gray-matter": "^4.0.3",
     "lucide-react": "^0.284.0",
+    "markdown-to-jsx": "^7.7.1",
     "next": "15.0.3",
     "next-themes": "^0.2.1",
     "react": "^18",

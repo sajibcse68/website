@@ -1,8 +1,15 @@
 'use server';
 
-import { redirect } from 'next/navigation';
+import React from 'react';
+import HeroSection from '@/components/sections/HeroSection';
+import BlogSection from '@/components/sections/BlogSection';
 
 export default async function HomePage() {
-  // for now redirect to my resume!
-  redirect('/resume');
+  return (
+    <div className="m-0">
+      <HeroSection />
+
+      <BlogSection />
+    </div>
+  );
 }

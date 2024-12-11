@@ -2,7 +2,7 @@ import { Icons } from '@/components/icons';
 import { SocialLink } from '@/components/social-link';
 import Link from 'next/link';
 import ActionButton from '@/components/action-button';
-import { cn } from '@/lib/utils';
+import { cn } from '@/utils/common';
 import { RESUME_TYPES } from '../constants';
 import Image from 'next/image';
 

@@ -1,4 +1,4 @@
-import { ThemeSwitcher } from "@/components/theme/theme-switcher";
+import { ThemeSwitcher } from "@/components/theme/ThemeSwitcher";
 import React from "react";
 import Image from "next/image";
 import { Container } from "./container";

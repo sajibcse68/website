@@ -2,11 +2,11 @@ import { Container } from '@/components/container';
 import React from 'react';
 import ActionButton from '@/components/action-button';
 import Motion from '@/components/motion';
-import HeaderSection from '@/components/section/HeaderSection';
-import SkillSection from '@/components/section/SkillSection';
-import WorkSection from '@/components/section/WorkSection';
-import ProjectSection from '@/components/section/ProjectSection';
-import EducationSection from '@/components/section/education-section';
+import HeaderSection from '@/components/sections/HeaderSection';
+import SkillSection from '@/components/sections/SkillSection';
+import WorkSection from '@/components/sections/WorkSection';
+import ProjectSection from '@/components/sections/ProjectSection';
+import EducationSection from '@/components/sections/education-section';
 import { RESUME_TYPES } from '@/components/constants';
 
 type Props = {
@@ -33,7 +33,7 @@ const FullResume = React.forwardRef(({ usage }: Props, ref) => {
 
   return (
     <Container
-      className="mt-9 max-w-6xl mx-auto"
+      className="my-9 max-w-6xl mx-auto"
       ref={ref as React.RefObject<HTMLDivElement>}
     >
       {animatedComponents.map(
