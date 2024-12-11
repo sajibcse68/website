@@ -1,6 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
-
+import Image from 'next/image';
+import Link from 'next/link';
 
 function HeroSection() {
   return (
@@ -70,33 +69,62 @@ function HeroSection() {
             data-aos="fade-right"
           >
             {/** <!-- Name Tag --> */}
-            <div className="inline-block">
+            <div className="flex justify-center gap-4 lg:justify-start">
               <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200">
                 👋 Hi, I&apos;m Sajib Khan
               </span>
+
+              {/** <!-- Social Links --> */}
+              <div className="flex gap-2 justify-center items-center">
+                <Link
+                  href="https://linkedin.com/in/sajibkhan"
+                  className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
+                  target="_blank"
+                >
+                  <span className="sr-only">LinkedIn</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="h-6 w-6"
+                    aria-hidden="true"
+                  >
+                    <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                  </svg>
+                </Link>
+
+                <Link
+                  href="https://github.com/sajibcse68"
+                  className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
+                  target="_blank"
+                >
+                  <span className="sr-only">GitHub</span>
+                  <svg
+                    className="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                </Link>
+              </div>
             </div>
 
             {/** <!-- Main Headline --> */}
-            <h1 className="text-4xl sm:text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white">
+            <h1 className="text-4xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 dark:text-white">
               <span className="block">Frontend Developer</span>
-              <span className="text-2xl sm:text-3xl lg:text-4xl block mt-2 text-gray-600 dark:text-slate-500">
+              <span className="text-2xl lg:text-[26px] xl:text-4xl block mt-2 text-gray-600 dark:text-slate-500">
                 & Innovative Web Solutions Architect
               </span>
             </h1>
 
             {/** <!-- Sub-headline --> */}
-            <p className="flex flex-wrap gap-4 justify-center lg:justify-start text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-2xl">
-              {/* 🚀 Passionate Frontend Architect with 10+ years of experience in
+            <p className="flex w-full mx-auto max-w-2xl flex-wrap justify-center gap-4 text-lg text-gray-600 dark:text-gray-300 sm:text-xl lg:justify-start">
+              Passionate Frontend Architect with 10+ years of experience in
               transforming complex requirements into high-performance web
-              solutions. Specializing in modern technologies like React,
-              TypeScript, TailwindCSS and Next.js, I deliver user-friendly applications with
-              a focus on scalability and performance! */}
-              🚀 Where Vision Meets Code | Elite Frontend Architect with 10+
-              years of turning ambitious ideas into stunning digital realities.
-              Mastering React, TypeScript, TailwindCSS and Next.js to create
-              blazing-fast, scalable web experiences that don&apos;t just meet
-              expectations – they redefine them! Ready to transform your next
-              big idea into digital gold? ✨
+              solutions. Skilled in JavaScript, React, TypeScript, and Next.js,
+              I deliver user-friendly applications with a focus on scalability
+              and performance. Let&apos;s build something amazing! 🚀
             </p>
 
             {/** <!-- CTA Buttons --> */}
@@ -113,40 +141,6 @@ function HeroSection() {
                 </span>
               </button>
             </div> */}
-
-            {/** <!-- Social Links --> */}
-            <div className="flex gap-4 justify-center lg:justify-start">
-              <Link
-                href="https://github.com/sajibcse68"
-                className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
-                target="_blank"
-              >
-                <span className="sr-only">GitHub</span>
-                <svg
-                  className="w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-                </svg>
-              </Link>
-              <Link
-                href="https://linkedin.com/in/sajibkhan"
-                className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
-                target="_blank"
-              >
-                <span className="sr-only">LinkedIn</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="h-6 w-6"
-                  aria-hidden="true"
-                >
-                  <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-                </svg>
-              </Link>
-            </div>
           </div>
 
           {/** <!-- Image/Illustration --> */}

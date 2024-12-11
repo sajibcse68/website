@@ -118,7 +118,7 @@ export default function Navbar() {
         </Link>
       </div>
 
-      <nav aria-label="Global" className="sm:px-9 col-span-1 md:col-span-2 lg:col-span-9 mx-2 md:mx-auto">
+      <nav aria-label="Global" className="col-span-1 md:col-span-2 lg:col-span-9">
         <div className="flex lg:flex-1"></div>
         <div className="flex lg:hidden">
           <button
