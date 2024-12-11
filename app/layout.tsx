@@ -7,12 +7,12 @@ import { Inter } from 'next/font/google';
 import Navbar from '@/components/navbar/Navbar';
 import { Footer } from '@/components/footer';
 
+// utils
+import { getSiteMetaData } from '@/utils/seo';
+
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
-  title: 'Sajib Khan',
-  description: 'Sajib Khan - Frontend Developer',
-};
+export const metadata: Metadata = getSiteMetaData({});
 
 export default function RootLayout({
   children,

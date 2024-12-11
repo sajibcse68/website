@@ -17,6 +17,13 @@ const robotoCondensed = Roboto_Condensed({
   subsets: ['latin'],
 });
 
+export async function generateMetadata() {
+  return {
+    title: 'Resume | Sajib Khan',
+    description: 'Sajib Khan - Frontend Developer',
+  };
+}
+
 export default function ResumePage() {
   return (
     <div className="flex justify-center sm:px-8">
