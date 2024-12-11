@@ -63,10 +63,7 @@ export default function SkillSection() {
       <div className="md:flex text-sm">
         <div className="w-full">
           <>
-            <span className="font-bold w-40">
-              <span className="font-bold">Performance and SEO</span>:
-            </span>
-            : &nbsp;
+            <span className="font-bold w-40">Performance and SEO</span>: &nbsp;
             <p className="inline">
               Specialize in optimizing Next.js apps to enhance web performance,
               Core Web Vitals, and SEO rankings, achieving lightning-fast load

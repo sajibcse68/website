@@ -6,7 +6,7 @@ import React from "react";
 
 import { Icons, type Icon } from "@/components/icons";
 import { Tooltip } from "@/components/ui/tooltip";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/common";
 
 type Platform =
   | "linkedin"
