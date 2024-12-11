@@ -1,6 +1,6 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import { ContainerInner, ContainerOuter } from "@/components/container";
+import { ContainerInner, ContainerOuter } from '@/components/container';
 
 function NavLink({
   href,
@@ -22,16 +22,13 @@ function NavLink({
 export function Footer() {
   return (
     <footer className="mt-32 flex w-full justify-center">
-        <div className="border-t w-full max-w-7xl border-zinc-100 pb-16 pt-10 dark:border-zinc-700/40">
-          <ContainerInner>
-            <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-              <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Sajib Khan. All rights
-                reserved.
-              </p>
-            </div>
-          </ContainerInner>
+      <div className="border-t w-full max-w-7xl border-zinc-100 pb-16 pt-10 dark:border-zinc-700/40">
+        <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
+          <p className="text-sm text-zinc-400 dark:text-zinc-500">
+            &copy; {new Date().getFullYear()} Sajib Khan. All rights reserved.
+          </p>
         </div>
+      </div>
     </footer>
   );
 }
