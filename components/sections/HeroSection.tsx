@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function HeroSection() {
   return (
-    <div className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-900 transition-colors duration-300">
+    <div className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-white to-white dark:from-gray-900 dark:to-gray-900 transition-colors duration-300">
       {/** <!-- Animated Background Patterns --> */}
       <div className="absolute inset-0 overflow-hidden">
         {/** <!-- Gradient Overlay --> */}
@@ -77,7 +77,7 @@ function HeroSection() {
               {/** <!-- Social Links --> */}
               <div className="flex gap-2 justify-center items-center">
                 <Link
-                  href="https://linkedin.com/in/sajibkhan"
+                  href="https://www.linkedin.com/in/sajibkhan"
                   className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300"
                   target="_blank"
                 >
