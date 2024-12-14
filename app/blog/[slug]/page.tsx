@@ -12,7 +12,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: any) {
-  const { slug } = params;
+  const { slug } = await params;
   const id = slug ? `${slug} | Sajib's Blog` : '';
 
   return {
@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: any) {
   };
 }
 
-export default function BlogPage(props: any) {
-  const { slug } = props.params;
+export default async function BlogPage(props: any) {
+  const { slug } = await props.params;
   const blog = getBlogContent(slug);
 
   return (

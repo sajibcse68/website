@@ -14,7 +14,7 @@ export const generateStaticParams = async () => {
 };
 
 export async function generateMetadata({ params }: any) {
-  const id = params?.slug ? `${params?.slug} | Sajib's Blogs` : '';
+  const id = await params?.slug ? `${params?.slug} | Sajib's Blogs` : '';
 
   return {
     title: `${capitalizeFirstLetter(id.replaceAll('-', ' ') ?? '')}`,

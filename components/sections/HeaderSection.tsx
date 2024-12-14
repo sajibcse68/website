@@ -25,7 +25,7 @@ export default function HeaderSection({ usage }: Props) {
             className="mx-1 h-6 w-6"
           />
           <SocialLink
-            href="https://linkedin.com/in/sajibkhan"
+            href="https://www.linkedin.com/in/sajibkhan"
             platform="linkedin"
             aria-label="My LinkedIn"
             className="mx-1 h-6 w-6"
@@ -37,7 +37,7 @@ export default function HeaderSection({ usage }: Props) {
               alt="stackoverflow"
               height={28}
               width={28}
-              className="h-4 w-4 rounded-full"
+              className="h-5 w-5"
               priority
               unoptimized
             />
