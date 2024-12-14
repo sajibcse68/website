@@ -127,10 +127,10 @@ const TestimonialSection = () => {
   };
 
   return (
-    <section className="min-h-screen py-20">
-      <div className="max-w-7xl mx-auto px-4 text-center">
+    <section className="min-h-screen py-20 md:py-20">
+      <div className="max-w-7xl mx-auto text-center">
         <div className="text-center mb-12">
-          <h2 className="text-carouselItemsxl font-bold text-gray-900 dark:text-white sm:text-4xl">
+          <h2 className="text-carouselItems text-2xl font-bold text-gray-900 dark:text-white sm:text-4xl">
             LinkedIn Recommendations
           </h2>
 
@@ -141,7 +141,7 @@ const TestimonialSection = () => {
 
         <div className="relative">
           {/* Carousel Container */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 px-5 1.5xl:px-0  md:grid-cols-2 lg:grid-cols-3 gap-4">
             {displayedTestimonials.map((testimonial) => (
               <div
                 className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105"
@@ -203,8 +203,7 @@ const TestimonialSection = () => {
           </div>
 
           {/* Navigation Buttons */}
-          {/* <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 w-full flex justify-between px-6"> */}
-          <div className="absolute -left-0s top-[42%] -translate-x-12 w-[calc(100%+6rem)] flex justify-between px-6">
+          <div className="absolute left-[1.5rem] 1.5xl:left-0 top-[42%] -translate-x-12 w-[calc(100%+3rem)] 1.5xl:w-[calc(100%+6rem)] flex justify-between px-6">
             <button
               onClick={prevSlide}
               className="p-3 rounded-full bg-white dark:bg-gray-700 shadow-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition-transform transform hover:scale-110"

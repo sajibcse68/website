@@ -25,6 +25,9 @@ const config: Config = {
       '9xl': ['8rem', { lineHeight: '1' }],
     },
     extend: {
+      screens: {
+        '1.5xl': '1380px',
+      },
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
