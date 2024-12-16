@@ -1,5 +1,5 @@
 <p align="center">
-<img src="public/images/stackoverflow-summary.png" alt="readme-header" width="500">
+<img src="public/images/og/website.png" alt="readme-header" width="500">
 </p>
 
 <div align="center">
