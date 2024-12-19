@@ -141,10 +141,10 @@ const TestimonialSection = () => {
 
         <div className="relative">
           {/* Carousel Container */}
-          <div className="grid grid-cols-1 px-5 1.5xl:px-0  md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 gap-4 px-5  md:grid-cols-2 lg:grid-cols-3 1.5xl:px-0">
             {displayedTestimonials.map((testimonial) => (
               <div
-                className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+                className="transform rounded-lg border border-gray-300 bg-white p-6 shadow-lg transition-transform hover:scale-105 dark:border-white2-80 dark:bg-white2-40"
                 key={testimonial.name}
               >
                 <Link

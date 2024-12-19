@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function HeroSection() {
   return (
-    <div className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-white to-white dark:from-gray-900 dark:to-gray-900 transition-colors duration-300">
+    <div className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-white to-white dark:from-blue2-900 dark:to-blue2-900 transition-colors duration-300">
       {/** <!-- Animated Background Patterns --> */}
       <div className="absolute inset-0 overflow-hidden">
         {/** <!-- Gradient Overlay --> */}

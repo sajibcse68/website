@@ -27,7 +27,7 @@ export default function RootLayout({
     >
       <body>
         <ThemeProvider>
-          <div className="flex h-full flex-col bg-white transition dark:bg-gray-900 px-6 sm:px-6">
+          <div className="flex h-full flex-col bg-white px-6 transition dark:bg-blue2-900 sm:px-6">
             <Navbar />
 
             <div className="relative text-zinc-800 dark:text-zinc-200">

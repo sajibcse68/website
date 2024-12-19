@@ -26,13 +26,13 @@
 	--color-team-yellow: #846901;
 	--color-yellow-500: #846901;
 	--color-yellow-500-inverted: #ffd644;
+	/* new colors, using 'clr' to avoid clashing with tailwind */
+	--clr-blue-900: #01031a;
 }
 
 .light,
 .dark .text-inverse {
 	--color-team-unknown: var(--color-black);
-	--bg-primary: var(--color-white);
-	--bg-secondary: var(--color-gray-100);
 	--bg-alt: var(--color-gray-200);
 	--border-secondary: var(--color-gray-200);
 	--text-primary: var(--color-black);
@@ -46,8 +46,6 @@
 	--color-yellow-500: #ffd644;
 	--color-yellow-500-inverted: #a08600;
 	--color-team-unknown: var(--color-white);
-	--bg-primary: var(--color-gray-900);
-	--bg-secondary: var(--color-gray-800);
 	--bg-alt: var(--color-gray-700);
 	--border-secondary: var(--color-gray-600);
 	--text-primary: var(--color-white);
