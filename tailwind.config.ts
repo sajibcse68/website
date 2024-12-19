@@ -31,6 +31,13 @@ const config: Config = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
+        white2: {
+          40: 'rgba(255, 255, 255, 0.04)',
+          80: 'rgba(255, 255, 255, .08)',
+        },
+        blue2: {
+          900: 'var(--clr-blue-900)',
+        },
         team: {
           unknown: 'var(--color-team-unknown)',
           current: 'var(--color-team-current)',

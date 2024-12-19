@@ -19,7 +19,7 @@ function BlogCard({ blog }: BlogCardProps) {
 
   return (
     <Link href={`/blog/${slug}`}>
-      <article className="group cursor-pointer rounded-2xl bg-white shadow-lg hover:shadow-2xl dark:bg-gray-800 h-full hover:ring-2 hover:ring-blue-500">
+      <article className="group h-full cursor-pointer rounded-2xl border border-gray-300 bg-white shadow-lg hover:shadow-2xl hover:ring-2 hover:ring-blue-500 dark:border-white2-80 dark:bg-white2-40">
         <div className="rounded-t-2xl aspect-[16/9]">
           <Image
             src={`/images/blogs/${slug}.webp`}
